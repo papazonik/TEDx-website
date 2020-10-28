@@ -1,0 +1,260 @@
+a{
+    color: #e62b1e;
+    text-decoration: none;
+}
+body{
+    background-color:white;
+    color: black;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+button{            
+    background-color: rgba(128, 128, 128, 0.329);
+    color: rgb(218, 218, 218);
+    display: flexbox;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    border-color: darkgray;
+    background-color: rgb(41, 37, 37);
+    transform: translate(0, 5px);
+    transition: .1s;
+}
+.contactPanel{
+    background: #f5f6fa;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 50px;
+}
+.contactPanel .title{
+    font-size: 20px;
+    background: #7f8fa6;
+    margin: 0px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.contactPanelImage{
+    display: inline-block;
+    width: 100px;
+    padding-top: 20px;
+}
+.contactPanelContent{
+    text-align: center;
+}
+footer{
+    background: black;
+    color: #6d6d6d;
+    padding: 20px 30%;
+    text-align: center;
+}
+footer a{
+    color: rgb(106, 106, 190);
+}
+.gridContainer_index{
+    display: grid;
+    grid-template-areas:
+    "main venueCard"
+    "main contactPanel";
+}
+.tedxInGeneral{
+    display: grid;
+    grid-template-areas:
+    "main contactPanel";
+}
+.organizers{
+    display: grid;
+    grid-template-areas:
+    "jonas contactPanel"
+    "edoardo lara"
+    "hofi alva"
+    "simon birgitta";
+    text-align: center;
+}
+.speakers{
+    display: grid;
+    grid-template-areas:
+    "speaker1 contactPanel"
+    "speaker2 ."
+    "speaker3 .";
+    text-align: center;
+}
+.gridItem{
+    margin: 15px;
+}
+.speaker1{
+    grid-area: speaker1;
+}
+.speaker2{
+    grid-area: speaker2;
+}
+.speaker3{
+    grid-area: speaker3;
+}
+.jonas{
+    grid-area: jonas;
+}
+.edoardo{
+    grid-area: edoardo;
+}
+.hofi{
+    grid-area: hofi;
+}
+.alva{
+    grid-area: alva;
+}
+.simon{
+    grid-area: simon;
+}
+.birgitta{
+    grid-area: birgitta;
+}
+.item1{
+    grid-area: main;
+}
+.item2{
+    grid-area: contactPanel;
+}
+.item3{
+    grid-area: venueCard;
+}
+.item3 img{
+    max-width: 100%;
+}
+.item4{
+    grid-area: organizer;
+}
+h2{
+    background: black;
+    font-size: 12px;
+    color: white;
+    padding: 0px 0px 0px 50px;
+    margin: 0;
+}
+h3{
+    background: black;
+    font-size: 12px;
+    color: white;
+    padding: 0px 0px 10px 5px;
+    padding-right: 20%;
+    margin: 0;
+}
+h3 a button{
+    font-size: 16px;
+}
+header{
+    margin: 30px;
+}
+.iframeContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 0;
+}
+.iframeContainer iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 650px;
+}
+.mapFigure img{
+    border-radius: 50%;
+    box-shadow: black 0px 0px 7px;
+    border: 1px solid white;
+    width: 300px;
+}
+.organizers figure, .speakers figure{
+    margin-bottom: 10px;
+    color:rgb(0, 0, 0)
+}
+.portrait{
+    border-radius: 50%;
+    box-shadow: black 0px 0px 7px;
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+section{
+    padding: 20px;
+}
+.title{
+    font-size: 20px;
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    font-weight: bold;
+}
+.titleHead{
+    font-size: 25px;
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.topPanel{ 
+    padding: 0px;
+}
+.topPanel div{ 
+    background: black;
+    font-size: 50px;
+    font-weight: bold;
+    color: #e62b1e;
+    padding: 10px 0px 0px 10px;
+    margin: 0;
+}
+
+
+/*EVERYTHING BELOW IS TRUE WHEN ON SMALLER DEVICE */
+@media screen and (max-width: 900px){
+    .topPanel div{
+        font-size: 40px;
+    }
+    .gridContainer_index, .organizers, .tedxInGeneral, .speakers{
+        display: list-item;
+    }
+    .gridItem{
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 720px){
+    .topPanel div{
+        font-size: 32px;
+    }
+    .logo{
+        width: 400px;
+    }
+    .contactPanel{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    footer{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 440px){
+    .topPanel div{
+        font-size: 26px;
+    }
+    .mapFigure img{
+        width: 200px;
+    }
+    .logo{
+        width: 300px;
+    }
+}

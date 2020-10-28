@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TedX Uppsala University Gotland</title>
+    <link rel="shortcut icon" type="image.jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="styleSheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("#footer").load("footer.html"); 
+        });
+        $(function(){
+          $("#topPanel").load("topPanel.html"); 
+        });
+        $(function(){
+          $("#contactPanel").load("contactPanel.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+    <div id="topPanel"></div>
+    <header class="titleHead">
+        TEDxUppsalaUniversityGotland, November 25th 2020
+    </header>
+    <div class="gridContainer_index">
+        <div class="gridItem item3">
+            <img class="venuCard" src="images/venueCard.PNG" alt="venue card">
+        </div>
+        <div class="gridItem item1">
+            The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world.[3] The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015.
+            <br><br> The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world.[3] The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015.
+            <a href="https://goo.gl/maps/NeDmbYRVBmzHwRwLA" target="_blank">
+                <figure class="mapFigure">
+                    <img src="images/location.PNG" alt="google maps image">
+            </a>
+                    <figcaption>
+                        Event Location: Cramérgatan 3, 621 57 Visby
+                    </figcaption>
+                </figure>
+        </div>
+        <div class="gridItem item2">
+            <div id="contactPanel"></div>
+        </div> 
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
