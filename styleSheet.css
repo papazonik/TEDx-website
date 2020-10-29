@@ -1,5 +1,5 @@
 a{
-    color: #e62b1e;
+    color: blue;
     text-decoration: none;
 }
 body{
@@ -26,14 +26,17 @@ button:hover{
 }
 .contactPanel{
     background: #f5f6fa;
+    border-radius: 5px;
     margin-left: 0px;
     margin-right: 0px;
     padding-bottom: 50px;
+
 }
 .contactPanel .title{
     font-size: 20px;
     background: #7f8fa6;
     margin: 0px;
+    border-radius: 5px;
     padding-top: 10px;
     font-weight: bold;
     text-align: center;
