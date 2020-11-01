@@ -49,6 +49,9 @@ button:hover{
 .contactPanelContent{
     text-align: center;
 }
+figure{
+    text-align: center;
+}
 footer{
     background: black;
     color: #6d6d6d;
@@ -84,19 +87,26 @@ footer a{
     "speaker1 contactPanel"
     "speaker2 ."
     "speaker3 .";
-    text-align: center;
+    text-align: left;
 }
 .gridItem{
     margin: 15px;
 }
 .speaker1{
     grid-area: speaker1;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .speaker2{
     grid-area: speaker2;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .speaker3{
     grid-area: speaker3;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 .jonas{
     grid-area: jonas;
@@ -115,9 +125,12 @@ footer a{
 }
 .birgitta{
     grid-area: birgitta;
+    padding-bottom: 20px;
 }
 .item1{
     grid-area: main;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .item2{
     grid-area: contactPanel;
