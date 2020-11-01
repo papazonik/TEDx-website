@@ -200,7 +200,7 @@ section{
     padding-top: 0px;
     font-weight: bold;
 }
-.titleHead{
+.titleHead, .titleHeadIndex{
     font-size: 25px;
     background: white;
     margin: 0px;
@@ -259,5 +259,8 @@ section{
     }
     .logo{
         width: 300px;
+    }
+    .titleHeadIndex{
+        font-size: 23px;
     }
 }
