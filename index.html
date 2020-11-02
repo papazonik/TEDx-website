@@ -9,14 +9,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script> 
         $(function(){
-          $("#footer").load("footer.html"); 
+            $("#footer").load("footer.html"); 
         });
         $(function(){
-          $("#topPanel").load("topPanel.html"); 
+            $("#topPanel").load("topPanel.html"); 
         });
         $(function(){
-          $("#contactPanel").load("contactPanel.html"); 
+            $("#contactPanel").load("contactPanel.html"); 
         });
+        function returnTimeLastModified(){
+            var x = new Date(document.lastModified);
+            document.getElementById("demo").innerHTML = x;
+        }
     </script> 
 </head>
 
