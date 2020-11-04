@@ -275,7 +275,7 @@ section{
     .gridItem{
         margin: 0px;
     }
-    .inline, figure, .mapFigure{
+    .inline, .mapFigure{
         display: block;
     }
     .text{
@@ -309,5 +309,8 @@ section{
     }
     .titleHeadIndex{
         font-size: 23px;
+    }
+    figure{
+        display: block;
     }
 }
