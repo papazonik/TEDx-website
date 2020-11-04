@@ -79,10 +79,10 @@ footer a{
 .organizers{
     display: grid;
     grid-template-areas:
-    "jonas contactPanel"
-    "edoardo lara"
-    "hofi alva"
-    "simon birgitta";
+    "jonas jonas contactPanel"
+    "edoardo lara ."
+    "hofi alva ."
+    "simon birgitta .";
     text-align: center;
 }
 .speakers{
