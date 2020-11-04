@@ -51,7 +51,7 @@ button:hover{
 }
 figure{
     text-align: center;
-    
+    display: inline-block;
 }
 figcaption{
     font-weight: bold;
@@ -211,6 +211,9 @@ header{
 section{
     padding: 20px;
 }
+.text{
+    font-size: 18px;
+}
 .title{
     font-size: 20px;
     background: white;
@@ -253,6 +256,12 @@ section{
     }
     .gridItem{
         margin: 0px;
+    }
+    .inline, figure, .mapFigure{
+        display: block;
+    }
+    .text{
+        font-size: 13.5px;
     }
 }
 @media screen and (max-width: 720px){

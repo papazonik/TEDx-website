@@ -17,10 +17,6 @@
         $(function(){
             $("#contactPanel").load("contactPanel.html"); 
         });
-        function returnTimeLastModified(){
-            var x = new Date(document.lastModified);
-            document.getElementById("demo").innerHTML = x;
-        }
     </script> 
 </head>
 
@@ -35,14 +31,38 @@
             <img class="venuCard" src="images/venueCard2.jpg" alt="venue card">
         </div>
         <div class="gridItem item1">
-            <a href="https://goo.gl/maps/NeDmbYRVBmzHwRwLA" target="_blank">
+            <div class="text">
+            The first TEDx event on Campus Gotland will be held on the 25th of November 2020. The ticket sale will open Sunday the 8th of November and there is a limited amount so be sure to get yours sooner than later.<br><br>
+            The topic of this event will be "courage to change" where our three speakers will have talks related to the topic. Elin Bååth will talk about why we need to bring back the ancient knowledge of a circular world - of the changing seasons of the earth, moon and our own bodies. Not only for the sake of our own health, but for the health of the earth and a sustainable society. Niclas Rodhborn will discuss how he brought himself out of tragedy and the strength he needed to recover. Alec Arho-Havrén’s focus is on the paradigm shift within energy, a diversified transport electrification and dynamic policy making, as enabling factors for decarbonising the economy.
+            </div>
+            <div class="inline">
+                <figure>
+                    <img class="portrait" src="images/speakers/elin.jpg" alt="Elin Bååth">
+                    <figcaption>
+                        Elin Bååth
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="portrait" src="images/speakers/niclas.jpg" alt="Niclas Rodhborn">
+                    <figcaption>
+                        Niclas Rodhborn
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="portrait" src="images/speakers/alec.jpg" alt="Alec Arho-Havrén">
+                    <figcaption>
+                        Alec Arho-Havrén
+                    </figcaption>
+                </figure>
+                <a href="https://goo.gl/maps/NeDmbYRVBmzHwRwLA" target="_blank">
                 <figure class="mapFigure">
                     <img src="images/location.PNG" alt="google maps image">
-            </a>
+                </a>
                     <figcaption>
                         Event Location: Cramérgatan 3, 621 57 Visby
                     </figcaption>
                 </figure>
+            </div>
         </div>
         <div class="gridItem item2">
             <div id="contactPanel"></div>
