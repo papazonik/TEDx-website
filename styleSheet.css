@@ -208,6 +208,14 @@ header{
     height: 200px;
     object-fit: cover;
 }
+.portraitSmall{
+    border-radius: 50%;
+    box-shadow: black 0px 0px 4px;
+    border: 0.6px solid white;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
 section{
     padding: 20px;
 }
@@ -223,9 +231,19 @@ section{
     padding-top: 0px;
     font-weight: bold;
 }
-.titleHead, .titleHeadIndex{
+.titleHead{
     font-size: 25px;
     background: white;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.titleHeadIndex{
+    font-size: 25px;
+    color: #e62b1e;
     margin: 0px;
     padding: 0px;
     padding-left: 10px;
